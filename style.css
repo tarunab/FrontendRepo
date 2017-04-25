@@ -1,0 +1,28 @@
+.t {
+    background-color: yellow;
+    float: right;
+}
+.transformStyle {
+font-weight: bold;
+transform: translate(100px,10px);
+}
+
+.o {
+    display: block;
+    background-color: red;
+    max-width:1000px;
+    margin-left: 30px;
+}
+
+
+.text-success {
+    background-color: green;
+}
+
+.text-large {
+    font-size: 200px;
+}
+
+.nextLine {
+    display: inline-block;
+}

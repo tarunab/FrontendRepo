@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<HTML ng-app="app">
+
+<HEAD>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="/angularlearning.js"></script>
+</HEAD>
+
+<body>
+    <!--Learning about ng-class-->
+    <input type="text" ng-model="one">
+    <input type="text" ng-model="two">
+    <div ng-class="[one, two]">
+        REM(Root EM) equals the font size of the HTML element(root element)
+    </div>
+    <!-- input box to toggle a variable to true or false -->
+    <input type="checkbox" ng-model="awesome"> Are You Awesome?
+    <input type="checkbox" ng-model="giant"> Are You a Giant?
+    <div class="transformStyle">Learning Transform style</div>
+    <!-- add the class 'text-success' if the variable 'awesome' is true -->
+    <div ng-class="{ 'text-success': awesome, 'text-large': giant }">
+        Awesome</div>
+    <!--Learning about Customer Directives-->
+    <input type="number" ng-model="value" min="0" max="100">
+    <customdir class="o" ng-style="{width: value +'%'}">
+        {{value}}
+    </customdir>
+<div>
+    <h1>Learning Tags</h1>
+    <code><del>text</del> test
+    <s>learning about s tag</s>
+    <ins datetime="2011-01-23T10:07:25+00:00"><strong>Please note:</strong> I am not a programmer.</ins>
+    </code>
+    <code><blockquote>
+  <p>&ldquo;
+    A lie gets halfway around the world before the truth has a chance to get its pants on.&rdquo;
+    <mark><b>Sir Winston Churchill</b></mark>
+  </p>
+</blockquote>
+<cite class="well">Cite: Whenever you reference a name of a film or song or website or sculpture or article, mark it up with the {cite} element. It gives css of font-style: Italic</cite>
+<q class="well nextLine"> q: This element is simply used to mark up inline quotations; quotes that are in the context of surrounding copy.</q>
+</code>
+</div>
+</body>
+
+</HTML>
