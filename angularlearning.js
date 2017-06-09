@@ -18,7 +18,7 @@ myApp.directive('customdir', function () {
                 element.css('background-color', 'yellow');
                 console.log("post function");
                 //  ele.css('font-size',100 + 'px');
-                //   console.log(ele);
+                //  console.log(ele);
             }
         }
 
